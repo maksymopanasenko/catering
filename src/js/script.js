@@ -1,6 +1,8 @@
 'use strict'
+
 import tabs from './modules/tabs';
 import cards from './modules/cards';
+import calc from './modules/calc';
 import timer from './modules/timer';
 import modal from './modules/modal';
 import forms from './modules/forms';
@@ -13,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabs('.tabcontent', '.tabheader__items', '.tabheader__item', 'tabheader__item_active');
     cards();
-    timer('.timer', "2023-01-28");
+    calc();
+    timer('.timer', "2023-04-28");
     modal('[data-modal]', '.modal', modalTimerId);
     forms('form', modalTimerId);
     slider({

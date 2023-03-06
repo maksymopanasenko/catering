@@ -59,7 +59,7 @@ function forms(formSelector, modalTimerId) {
     
     const forms = document.querySelectorAll(formSelector);
     const message = {
-        loading: 'icons/spinner.svg',
+        loading: '../../icons/spinner.svg',
         success: 'Thanks, everything is ok',
         failure: 'Something wrong'
     };
