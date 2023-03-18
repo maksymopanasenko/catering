@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modal('[data-modal]', '.modal', modalTimerId);
     forms('form', modalTimerId);
     slider({
-        container: '.offer__slider-wrapper',
         slide: '.offer__slide',
         nextArr: '.offer__slider-next',
         prevArr: '.offer__slider-prev',

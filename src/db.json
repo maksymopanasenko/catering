@@ -1,32 +1,25 @@
 {
-  "menu": [
-    {
-      "img": "img/tabs/vegy.jpg",
-      "altimg": "vegy",
-      "title": "Меню 'Фитнес'",
-      "descr": "Меню 'Фитнес' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
-      "price": 9
-    },
-    {
-      "img": "img/tabs/post.jpg",
-      "altimg": "post",
-      "title": "Меню 'Постное'",
-      "descr": "Меню 'Постное' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.",
-      "price": 14
-    },
-    {
-      "img": "img/tabs/elite.jpg",
-      "altimg": "elite",
-      "title": "Меню 'Премиум'",
-      "descr": "В меню 'Премиум' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!",
-      "price": 21
-    }
-  ],
-  "requests": [
-    {
-      "name": "Kevin McCallister",
-      "phone": "+1045678965",
-      "id": 1
-    }
-  ]
+    "menu": [
+        {
+          "img": "img/tabs/vegy.jpg",
+          "altimg": "vegy",
+          "title": "Menu 'Fitness'",
+          "descr": "Menu 'Fitness' is a new approach to cooking: more fresh vegetables and fruits. For people who are interested in sports; active and healthy. This is a brand new product with the best price and high quality!",
+          "price": 9
+        },
+        {
+          "img": "img/tabs/post.jpg",
+          "altimg": "post",
+          "title": "Menu 'Lenten'",
+          "descr": "Our special 'Lenten Menu' is a careful selection of ingredients: the complete absence of animal products. Complete harmony with yourself and nature in every element!",
+          "price": 14
+        },
+        {
+          "img": "img/tabs/elite.jpg",
+          "altimg": "elite",
+          "title": "Menu 'Premium'",
+          "descr": "In menu 'Premium' we use not only beautiful packaging design, but also high-quality execution of dishes. Red fish, seafood, fruits - a restaurant menu without going to a restaurant!",
+          "price": 21
+        }
+    ]
 }

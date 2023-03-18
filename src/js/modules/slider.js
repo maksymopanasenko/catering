@@ -1,4 +1,4 @@
-function slider({container, slide, nextArr, prevArr, totalCount, currentCount}) {
+function slider({slide, nextArr, prevArr, totalCount, currentCount}) {
     const slides = document.querySelectorAll(slide),
           prevArrow = document.querySelector(prevArr),
           nextArrow = document.querySelector(nextArr),
