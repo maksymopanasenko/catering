@@ -1,14 +1,29 @@
-'use strict';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-let path = require('path');
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
 
 module.exports = {
   mode: 'production',
   entry: './src/js/script.js',
   output: {
-    filename: 'bundle.js',
-    path: __dirname + '/src/js'
+    filename: 'js/bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/icons', to: 'icons' }, 
+        { from: 'src/img', to: 'img' }, 
+      ],
+    }),
+  ],
+
   watch: true,
 
   devtool: "source-map",
@@ -28,6 +43,10 @@ module.exports = {
             }]]
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       }
     ]
   }

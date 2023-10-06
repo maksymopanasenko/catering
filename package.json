@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/js/index.js",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,8 +19,12 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
+    "copy-webpack-plugin": "^11.0.0",
     "core-js": "^3.27.1",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "json-server": "^0.17.1",
+    "style-loader": "^3.3.3",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },

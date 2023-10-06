@@ -1,4 +1,5 @@
-'use strict'
+'use strict';
+import '../css/style.css';
 
 import tabs from './modules/tabs';
 import cards from './modules/cards';
