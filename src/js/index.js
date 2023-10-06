@@ -28,14 +28,14 @@ async function handleRequest(request, response) {
         console.log(url);
 
         if (url == '/') {
-            fs.readFile(url.slice(1) || 'src/index.html', (err, data) => {
+            fs.readFile(url.slice(1) || 'dist/index.html', (err, data) => {
                 if (!err) return response.end(data);
     
                 response.statusCode = 404;
                 response.end('File or path not found in ' + url);
             });
         } else {
-            fs.readFile('src' + url, (err, data) => {
+            fs.readFile('dist' + url, (err, data) => {
                 if (request.url.endsWith('.svg')) response.setHeader('Content-Type', 'image/svg+xml');
                 if (request.url.endsWith('.css')) response.setHeader('Content-Type', 'text/css');
                 if (!err) return response.end(data);

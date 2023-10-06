@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
@@ -20,6 +19,9 @@ module.exports = {
       patterns: [
         { from: 'src/icons', to: 'icons' }, 
         { from: 'src/img', to: 'img' }, 
+        { from: 'src/css', to: 'css' }, 
+        { from: 'src/js/index.js', to: 'js/index.js' }, 
+        { from: 'src/db.json', to: 'database/db.json' }, 
       ],
     }),
   ],

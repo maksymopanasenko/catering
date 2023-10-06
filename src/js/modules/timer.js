@@ -1,4 +1,15 @@
-function timer(id, deadline) {
+function calculateDate(n) {
+    const today = new Date(Date.now());
+    today.setDate(today.getDate() + n);
+  
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+  
+    return `${year}-${month}-${day}`;
+}
+
+function timer(id) {
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -50,7 +61,7 @@ function timer(id, deadline) {
     
 
 
-    setClock(id, deadline);
+    setClock(id, calculateDate(6));
 }
 
 export default timer;
